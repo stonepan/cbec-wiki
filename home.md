@@ -1,0 +1,127 @@
+#### 1.账目类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.acct.service.AcctItemTypeRemoteService>`
+1.1 查询所有账目类型
+>
+`List<AcctItemTypeData> qryAllAcctItemType()`
+  
+1.2 根据账目类型id查询账目类型
+>
+`AcctItemTypeData qryAcctItemTypeById(Long acctItemTypeId)`
+
+1.3 根据余额类型ID查询账目类型
+>
+`List<AcctItemTypeData> qryAcctItemTypeByAcctResId(Long acctResId)`
+
+#### 2.属性查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.attr.service.AttrRemoteService>`
+2.1 根据目录查询属性基本信息
+>
+`List<AttrData> queryAttrByCatg(String attrCatg)`
+
+2.2 根据属性标识（多个）查询属性基本信息
+>
+`List<AttrData> queryAttrByAttrIds(Long[] attrIds)`
+
+2.3 根据属性标识（多个）查询属性基本信息（给ZTP测试用）
+>
+`List<AttrData> queryAttrByAttrIds4Ztp(AttrIdData4Ztp attrIdData)`
+
+#### 3.域表查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.DomainRemoteService>`
+3.1 根据域类型编码查询域表数据
+> 
+`List<DomainData> queryPublicDimList(String domainTypeCode)`
+
+#### 4.账期查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.BillingCycleRemoteService>`
+4.1 查询所有账期类型
+>
+`List<BillingCycleTypeData> queryAllBillingCycleType()`
+
+4.2 根据账期类型id，账期日期，偏移量查询账期
+>
+`BillingCycleData qryBillingCycle(Long billingCycleTypeId, Date startDate, int offset)`
+
+4.3 根据账期类型id，账期日期，偏移量查询账期（给ZTP测试用）
+>
+`BillingCycleData qryBillingCycle4Ztp(Parm4QryBillCyc parm4QryBillCyc)`
+
+#### 5.支付方式查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.pay.service.PaymentMethodRemoteService>`
+5.1 查询所有支付方式
+>
+`List<PaymentMethodData> queryAllPaymentMethod()` 
+
+#### 6.交互事件查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.InterEventRemoteService>`
+6.1 根据事件id查询交互事件
+>
+`InterEventData qryInterEventById(Long eventId)`
+
+6.2 查询符合事件使用范围的所有交互事件
+>
+`List<InterEventData> qryInterEventsByScope(String scope)`
+
+#### 7.供应商查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.VenderRemoteService>`
+7.1 查询查询所有供应商
+>
+`List<VenderData> queryAllVender()`
+ 
+#### 8.业务配置项查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.busiparam.service.ConfigItemRemoteService>`
+8.1 根据业务模型编码，业务配置项编码，业务配置项参数编码查询业务配置项
+>
+`ConfigItemParamData qryConfigItemParamValue(String moduleCode, String itemCode, String paramCode)`
+ 
+#### 9.接触渠道查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.channel.service.ContactChannelRemoteService>`
+9.1 查询所有接触渠道数据
+>
+`List<ContactChannelData> qryAllContactChannel()`
+
+9.2 根据渠道类型查询接触渠道
+>
+`List<ContactChannelData> qryContactChannelByChannelType(Long channelType)`
+
+9.3 根据接触渠道id查询接触渠道
+>
+`ContactChannelData qryContactChannelById(Long contactChannelId)`
+ 
+#### 10.余额类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.acct.service.AcctResRemoteService>`
+10.1 根据余额类型id查询余额类型
+>
+`AcctResData qryAcctResById(Long acctResId)`
+
+10.2 根据余额大类查询余额类型
+>`List<AcctResData> qryAcctResByBalType(Long balType)`
+
+10.3 根据ID数组查询余额类型集合
+>
+`List<AcctResData> qryAcctResByIds(Long[] acctResIds)`
+
+10.4 根据ID数组查询余额类型集合（给ZTP测试用）
+>
+`List<AcctResData> qryAcctResByIds4Ztp(AcctResIds4Ztp acctResIds)`
+ 
+#### 11.货币类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.CurrencyTypeRemoteService>`
+11.1 查询所有货币类型
+>
+`List<CurrencyTypeData> qryAllCurrencyType()`
+
+11.2 根据货币类型编码查询货币类型
+>
+`CurrencyTypeData qryCurrencyTypeByCode(String currencyCode)`
+
+#### 12.单位类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.UnitTypeRemoteService>`
+12.1 查询所有单位类型
+>
+`List<UnitTypeData> qryAllUnitType()`
+
+12.2 根据unitTypeId查询单位类型
+>
+`UnitTypeData qryUnitTypeById(Long unitTypeId)`
+ 
+#### 13.保证金类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.UnitTypeRemoteService>`
+13.1 查询所有保证金类型
+>
+`List<DepositTypeData> qryAllDepositType()`
+
+13.2 根据idList查询保证类型
+>
+`List<DepositTypeData> qryDepositTypeByIdList(List<Long> depositTypeIdList)`
+
+13.3 根据idList查询保证类型（给ZTP测试用）
+>
+`List<DepositTypeData> qryDepositTypeByIdList4Ztp(DepositTypeIdList4Ztp depositTypeIdList)`
