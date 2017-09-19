@@ -125,3 +125,34 @@
 13.3 根据idList查询保证类型（给ZTP测试用）
 >
 `List<DepositTypeData> qryDepositTypeByIdList4Ztp(DepositTypeIdList4Ztp depositTypeIdList)`
+
+#### 14.渠道关联单位类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.channel.service.ChannelUnitTypeRemoteService>`
+14.1 根据渠道ID查询适用单位类型集合
+>
+`List<ChannelUnitTypeData> qryChannelUnitTypeByChannelId(Long channelId)`
+
+#### 15.银行查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.BankRemoteService>`
+15.1 查询所有银行
+>
+`List<BankData> qryAllBank()`
+
+15.2 根据银行编码查询银行
+>
+`BankData qryBankByCode(String bankCode)`
+
+15.3 根据银行id查询银行
+>
+`BankData qryBankById(Long bankId)`
+
+#### 16.分期付款类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.pay.service.InstalmentTypeRemoteService>`
+16.1 根据账目类型（AcctItemTypeId）查询适用的分期付款类型（基本信息，只返回cbec_instalment_type表信息）
+>
+`List<InstalmentTypeData> qryInstalmentTypeByAcctItemTypeId(Long acctItemTypeId)`
+
+16.2 查询所有分期付款类型（基本信息，只返回cbec_instalment_type表信息）
+>
+`List<InstalmentTypeData> qryAllInstalmentType()`
+
+16.3 根据分期付款类型ID查询分期付款详情（返回cbec_instalment_type, cbec_instalment_type_item, cbec_instalment_item三张表信息）
+>
+`InstalmentTypeData qryInstalmentTypeById(Long instalmentTypeId)`
