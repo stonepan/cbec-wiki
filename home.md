@@ -36,7 +36,7 @@
 
 4.2 根据账期类型id，账期日期，偏移量查询账期
 >
-`BillingCycleData qryBillingCycle(Long billingCycleTypeId, Date startDate, int offset)`
+`BillingCycleData qryBillingCycle(Long billingCycleTypeId, Date startDate, Integer offset)`
 
 4.3 根据账期类型id，账期日期，偏移量查询账期（给ZTP测试用）
 >
