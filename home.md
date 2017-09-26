@@ -160,3 +160,16 @@
 16.3 根据分期付款类型ID查询分期付款详情（返回cbec_instalment_type, cbec_instalment_type_item, cbec_instalment_item三张表信息）
 >
 `InstalmentTypeData qryInstalmentTypeById(Long instalmentTypeId)`
+
+#### 17.物理、网络小区查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.zone.service.HomeZoneRemoteService>`
+17.1 查询所有物理小区
+>
+`List<GeoHomeZoneData> qryAllGeoZones()`
+
+17.2 查询所有网络小区
+>
+`List<HomeZoneData> qryAllHomeZones()`
+
+17.3 根据物理小区ID查询网络小区
+>
+`List<HomeZoneData> qryHomeZonesByGeoZoneId(Long geoZoneId)`
