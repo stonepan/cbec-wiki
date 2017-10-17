@@ -173,3 +173,9 @@
 17.3 根据物理小区ID查询网络小区
 >
 `List<HomeZoneData> qryHomeZonesByGeoZoneId(Long geoZoneId)`
+
+#### 18.MVNO查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.mvno.service.MvnoRemoteService>`
+18.1 查询指定MVNO拥有的数据权限
+>
+`QueryMvnoDataAuthListResp queryMvnoDataAuthList(QueryMvnoDataAuthListReq req)`
+
