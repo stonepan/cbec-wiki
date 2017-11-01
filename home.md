@@ -73,7 +73,7 @@
 
 9.2 根据渠道类型查询接触渠道
 >
-`List<ContactChannelData> qryContactChannelByChannelType(Long channelType)`
+`List<ContactChannelData> qryContactChannelByChannelType(String channelType)`
 
 9.3 根据接触渠道id查询接触渠道
 >
