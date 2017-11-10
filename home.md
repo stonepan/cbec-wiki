@@ -180,7 +180,7 @@
 `QueryMvnoDataAuthListResp queryMvnoDataAuthList(QueryMvnoDataAuthListReq req)`
 
 #### 19.余额类型组查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.acct.service.AcctResGroupRemoteService>`
-18.1 查询所有的余额类型组
+19.1 查询所有的余额类型组
 >
 `QueryAcctResGroupListResp queryAcctResGroupList(QueryAcctResGroupListReq request)`
 
