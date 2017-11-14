@@ -108,6 +108,10 @@
 >
 `CurrencyTypeData qryCurrencyTypeByCode(String currencyCode)`
 
+11.3 根据条件查询货币类型(QueryCurrencyTypeReq目前包含currencyTypeId和currencyTypeCode字段，查询顺序为先根据id查询，id为空则根据code查询)
+>
+`QueryCurrencyTypeResp queryCurrencyType(QueryCurrencyTypeReq request)`
+
 #### 12.单位类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.UnitTypeRemoteService>`
 12.1 查询所有单位类型
 >
@@ -180,7 +184,7 @@
 `QueryMvnoDataAuthListResp queryMvnoDataAuthList(QueryMvnoDataAuthListReq req)`
 
 #### 19.余额类型组查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.acct.service.AcctResGroupRemoteService>`
-19.1 查询所有的余额类型组
+19.1 查询余额类型组集合(QueryAcctResGroupListReq暂时有all字段，且默认为空，即查询全量)
 >
 `QueryAcctResGroupListResp queryAcctResGroupList(QueryAcctResGroupListReq request)`
 
