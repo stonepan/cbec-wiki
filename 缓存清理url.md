@@ -86,7 +86,7 @@
 > 
 `"cbec/cache/clear/depositTypes"`
 
-2.29 清空组合数据对象缓存数据
+2.19 清空组合数据对象缓存数据
 > 
 `"cbec/cache/clear/combDataObjects"`
 
