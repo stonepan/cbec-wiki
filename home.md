@@ -24,6 +24,10 @@
 >
 `List<AttrData> queryAttrByAttrIds4Ztp(AttrIdData4Ztp attrIdData)`
 
+2.4 根据入参条件查询属性信息列表(QueryAttrListReq目前包含attrIds、attrCodes和attrCatg字段，查询顺序为先根据ids查询，ids为空则根据codes查询，codes为空根据catg查询)
+>
+`QueryAttrListResp queryAttrList(QueryAttrListReq queryAttrListReq)`
+
 #### 3.域表查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.DomainRemoteService>`
 3.1 根据域类型编码查询域表数据
 > 
