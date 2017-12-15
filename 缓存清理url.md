@@ -90,3 +90,7 @@
 > 
 `"cbec/cache/clear/combDataObjects"`
 
+2.20 清空业务进程缓存数据
+> 
+`"cbec/cache/clear/businessProcessors"`
+
