@@ -192,4 +192,8 @@
 >
 `QueryAcctResGroupListResp queryAcctResGroupList(QueryAcctResGroupListReq request)`
 
+#### 20.业务进程查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.BusinessProcessorRemoteService>`
+20.1 根据入参条件查询业务进程列表(QueryBusinessProcessorListReq中有processorIds字段，为空则查询全量)
+>
+`QueryBusinessProcessorListResp queryBusinessProcessorList(QueryBusinessProcessorListReq request)`
 
