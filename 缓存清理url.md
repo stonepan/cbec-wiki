@@ -94,3 +94,7 @@
 > 
 `"cbec/cache/clear/businessProcessors"`
 
+2.21 清空信控类型缓存数据
+> 
+`"cbec/cache/clear/clTypes"`
+
