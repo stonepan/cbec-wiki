@@ -197,3 +197,8 @@
 >
 `QueryBusinessProcessorListResp queryBusinessProcessorList(QueryBusinessProcessorListReq request)`
 
+#### 21.信控类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.ClTypeRemoteService>`
+21.1 根据入参条件查询信控类型列表(QueryClTypeListReq暂无字段，默认为查询全量)
+>
+`QueryClTypeListResp queryClTypeList(QueryClTypeListReq request)`
+
