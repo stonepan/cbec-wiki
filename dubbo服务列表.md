@@ -207,3 +207,7 @@
 >
 `QueryUnitListResp queryUnitList(QueryUnitListReq req)`
 
+#### 23.信用额度类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.CcTypeRemoteService>`
+23.1 根据条件查询信用额度类型类别(QueryCcTypeListReq为null则查询全量)
+>
+`QueryCcTypeListResp queryCcTypeList(QueryCcTypeListReq req)`
