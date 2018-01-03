@@ -138,10 +138,10 @@
 >
 `List<DepositTypeData> qryDepositTypeByIdList4Ztp(DepositTypeIdList4Ztp depositTypeIdList)`
 
-#### 14.渠道关联单位类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.channel.service.ChannelUnitTypeRemoteService>`
-14.1 根据渠道ID查询适用单位类型集合
+#### 14.渠道关联单位查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.channel.service.ChannelUnitRemoteService>`
+14.1 根据条件查询适用渠道关联单位集合，QueryChannelUnitListReq包含channelID字段
 >
-`List<ChannelUnitTypeData> qryChannelUnitTypeByChannelId(Long channelId)`
+`QueryChannelUnitListResp queryChannelUnitList(QueryChannelUnitListReq req)`
 
 #### 15.银行查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.BankRemoteService>`
 15.1 查询所有银行
@@ -201,4 +201,9 @@
 21.1 根据入参条件查询信控类型列表(QueryClTypeListReq暂无字段，默认为查询全量)
 >
 `QueryClTypeListResp queryClTypeList(QueryClTypeListReq request)`
+
+#### 22.单位查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.UnitRemoteService>`
+22.1 根据入参条件查询单位列表(QueryUnitListReq为null则查询全量，QueryUnitListReq中有unitIds和defaultUnit字段)
+>
+`QueryUnitListResp queryUnitList(QueryUnitListReq req)`
 
