@@ -28,7 +28,7 @@
 >
 `QueryAttrListResp queryAttrList(QueryAttrListReq queryAttrListReq)`
 
-#### 3.域表查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.DomainRemoteService>`
+#### 3.域类型数据查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.DomainRemoteService>`
 3.1 根据域类型编码查询域表数据
 > 
 `List<DomainData> queryPublicDimList(String domainTypeCode)`
