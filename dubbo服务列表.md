@@ -129,7 +129,7 @@
 >
 `UnitTypeData qryUnitTypeById(Long unitTypeId)`
  
-#### 13.保证金类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.UnitTypeRemoteService>`
+#### 13.保证金类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.DepositTypeRemoteService>`
 13.1 查询所有保证金类型
 >
 `List<DepositTypeData> qryAllDepositType()`
