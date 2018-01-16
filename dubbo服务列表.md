@@ -143,7 +143,7 @@
 `List<DepositTypeData> qryDepositTypeByIdList4Ztp(DepositTypeIdList4Ztp depositTypeIdList)`
 
 #### 14.渠道关联单位查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.channel.service.ChannelUnitRemoteService>`
-14.1 根据条件查询适用渠道关联单位集合，QueryChannelUnitListReq包含channelID字段
+14.1 根据条件查询适用渠道关联单位集合，QueryChannelUnitListReq包含contactChannelID字段和unitTypeId字段。只有contactChannelID时查询该渠道下的所有关联单位；有unitTypeId再根据其过滤
 >
 `QueryChannelUnitListResp queryChannelUnitList(QueryChannelUnitListReq req)`
 
@@ -212,6 +212,11 @@
 `QueryUnitListResp queryUnitList(QueryUnitListReq req)`
 
 #### 23.信用额度类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.CcTypeRemoteService>`
-23.1 根据条件查询信用额度类型类别(QueryCcTypeListReq为null则查询全量)
+23.1 根据条件查询信用额度类型列表(QueryCcTypeListReq为null则查询全量)
+>
+`QueryCcTypeListResp queryCcTypeList(QueryCcTypeListReq req)`
+
+#### 24.单位兑换率查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.UnitRateRemoteService>`
+23.1 根据条件查询单位兑换率列表(QueryUnitRateListReq包含srcUnitId和objUnitId两个字段。只传srcUnitId时查询源单位为其的所有单位兑换率；如果有objUnitId，再根据它过滤)
 >
 `QueryCcTypeListResp queryCcTypeList(QueryCcTypeListReq req)`
