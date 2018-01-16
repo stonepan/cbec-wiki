@@ -13,7 +13,7 @@
 
 
 #### 2.清除缓存（删除现有缓存）
-2.1 清空余额类型缓存数据
+2.1 清空所有cbec缓存数据
 >
 `"cbec/cache/clear/all"`
 
@@ -110,3 +110,6 @@
 > 
 `"cbec/cache/clear/ccTypes"`
 
+2.25 清空单位兑换率缓存数据
+> 
+`"cbec/cache/clear/unitRates"`
