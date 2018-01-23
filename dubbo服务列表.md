@@ -24,7 +24,7 @@
 >
 `List<AttrData> queryAttrByAttrIds4Ztp(AttrIdData4Ztp attrIdData)`
 
-2.4 根据入参条件查询属性信息列表(QueryAttrListReq目前包含attrIds、attrCodes和attrCatg字段，查询顺序为先根据ids查询，ids为空则根据codes查询，codes为空根据catg查询)
+2.4 根据入参条件查询属性信息列表(QueryAttrListReq目前包含attrIds、attrCodes、attrCatg和objAttrId字段，查询顺序为先根据ids查询；ids为空则根据codes查询；codes为空根据catg查询，根据catg查询时，过滤掉子属性，即objAttrId字段不为空的属性；catg为空时根据objAttrId字段查询，查询objAttrId等于传入值的属性)
 >
 `QueryAttrListResp queryAttrList(QueryAttrListReq queryAttrListReq)`
 
