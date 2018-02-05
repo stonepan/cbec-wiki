@@ -219,4 +219,4 @@
 #### 24.单位兑换率查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.UnitRateRemoteService>`
 23.1 根据条件查询单位兑换率列表(QueryUnitRateListReq包含srcUnitId和objUnitId两个字段。只传srcUnitId时查询源单位为其的所有单位兑换率；如果有objUnitId，再根据它过滤)
 >
-`QueryCcTypeListResp queryCcTypeList(QueryCcTypeListReq req)`
+`QueryUnitRateListResp queryUnitRateList(QueryUnitRateListReq request)`
