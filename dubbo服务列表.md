@@ -1,3 +1,5 @@
+## 1. [余额类型](dubbo_srv_list/acct_res.md)
+
 #### 1.账目类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.acct.service.AcctItemTypeRemoteService>`
 1.1 查询所有账目类型
 >
@@ -86,30 +88,6 @@
 9.3 根据接触渠道id查询接触渠道
 >
 `ContactChannelData qryContactChannelById(Long contactChannelId)`
- 
-#### 10.余额类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.acct.service.AcctResRemoteService>`
-10.1 根据入参中的条件查询余额类型列表（入参为null时查询所有余额类型；优先根据QueryAcctResListReq中acctResIds字段查询，该字段为空时，根据balType字段查询，balType为空时根据acctResGroupId查询）
->
-`QueryAcctResListResp queryAcctResList(QueryAcctResListReq request)`
-
-10.2 查询所有的余额类型
->
-`List<AcctResData> qryAllAcctRes()`
-
-10.3 根据余额类型id查询余额类型
->
-`AcctResData qryAcctResById(Long acctResId)`
-
-10.4 根据余额大类查询余额类型
->`List<AcctResData> qryAcctResByBalType(Long balType)`
-
-10.5 根据ID数组查询余额类型集合
->
-`List<AcctResData> qryAcctResByIds(Long[] acctResIds)`
-
-10.6 根据ID数组查询余额类型集合（给ZTP测试用）
->
-`List<AcctResData> qryAcctResByIds4Ztp(AcctResIds4Ztp acctResIds)`
  
 #### 11.货币类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.CurrencyTypeRemoteService>`
 11.1 查询所有货币类型
