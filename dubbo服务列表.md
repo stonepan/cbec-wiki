@@ -46,7 +46,7 @@
 >
 `BillingCycleData qryBillingCycle4Ztp(Parm4QryBillCyc parm4QryBillCyc)`
 
-4.4 根据入参中的条件查询账期类型列表（QueryBillingCycleTypeListReq中包含postpaid字段，可选值为"Y"和"N",匹配先付费和后付费的账期类型，如果入参为null或postpaid字段为null，则返回全部账期类型）
+4.4 issue#245 根据入参中的条件查询账期类型列表（QueryBillingCycleTypeListReq中包含postpaid字段，可选值为"Y"和"N",匹配先付费和后付费的账期类型，如果入参为null或postpaid字段为null，则返回全部账期类型）
 >
 `QueryBillingCycleTypeListResp qryBillingCycleTypeList(QueryBillingCycleTypeListReq req)`
 
