@@ -46,4 +46,4 @@ List<CurrencyType> qryAllCurrencyType()
 无
 
 #### 1.2.3 出参说明
-CurrencyType(#CurrencyType)
+[CurrencyType](#CurrencyType)
