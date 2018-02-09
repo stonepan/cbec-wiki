@@ -10,7 +10,7 @@ com.ztesoft.zsmart.bss.crm.bcdc.acct.service.AcctResRemoteService
 QueryAcctResListResp queryAcctResList(QueryAcctResListReq request)
 ```
 #### 1.1.2 入参说明
-QueryAcctResListReq:
+##### QueryAcctResListReq:
 | Name | Type | Description | Note |
 | ---- | ---- | ----------- | ---- |
 | acctResIds | List`<Long>` | 如果指定了ID则根据ID查询，优先级1 | O |
