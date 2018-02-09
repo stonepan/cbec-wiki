@@ -1,4 +1,5 @@
 ## 1. [余额类型](dubbo_srv_list/acct_res.md)
+## 2. [货币类型](dubbo_srv_list/currency_type.md)
 
 #### 1.账目类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.acct.service.AcctItemTypeRemoteService>`
 1.1 查询所有账目类型
@@ -89,18 +90,7 @@
 >
 `ContactChannelData qryContactChannelById(Long contactChannelId)`
  
-#### 11.货币类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.CurrencyTypeRemoteService>`
-11.1 查询所有货币类型
->
-`List<CurrencyTypeData> qryAllCurrencyType()`
 
-11.2 根据货币类型编码查询货币类型
->
-`CurrencyTypeData qryCurrencyTypeByCode(String currencyCode)`
-
-11.3 根据条件查询货币类型(QueryCurrencyTypeReq目前包含currencyTypeId和currencyTypeCode字段，查询顺序为先根据id查询，id为空则根据code查询)
->
-`QueryCurrencyTypeResp queryCurrencyType(QueryCurrencyTypeReq request)`
 
 #### 12.单位类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.common.service.UnitTypeRemoteService>`
 12.1 查询所有单位类型
