@@ -36,7 +36,7 @@ QueryCurrencyTypeResp queryCurrencyType(QueryCurrencyTypeReq request)
 | rateDisplayScale | Long | 费率配置显示精度 | O |
 | roundMethod | String | 四舍五入方式，参考ROUND_METHOD域数据定义 | O |
 
-## 1.2 查询所有货币类型
+## 1.2 查询所有货币类型(`待改造`)
 返回所有货币类型列表
 ### 方法签名：
 ```java
