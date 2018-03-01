@@ -98,18 +98,14 @@
 > 
 `"cbec/cache/clear/businessProcessors"`
 
-2.22 清空信控类型缓存数据
-> 
-`"cbec/cache/clear/clTypes"`
-
-2.23 清空单位缓存数据
+2.22 清空单位缓存数据
 > 
 `"cbec/cache/clear/units"`
 
-2.24 清空信用额度类型缓存数据
+2.23 清空信用额度类型缓存数据
 > 
 `"cbec/cache/clear/ccTypes"`
 
-2.25 清空单位兑换率缓存数据
+2.24 清空单位兑换率缓存数据
 > 
 `"cbec/cache/clear/unitRates"`
