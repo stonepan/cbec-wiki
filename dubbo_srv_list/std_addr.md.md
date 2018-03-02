@@ -1,4 +1,4 @@
-# 1. 标准地址查询服务
+# 1. 标准地址批量查询服务
 服务类：
 ```java
 com.ztesoft.zsmart.bss.crm.bcdc.addr.service.StdAddrRemoteService
