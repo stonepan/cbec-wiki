@@ -1,6 +1,7 @@
 ## 1. [余额类型](dubbo_srv_list/acct_res.md)
 ## 2. [货币类型](dubbo_srv_list/currency_type.md)
 ## 3. [单位](dubbo_srv_list/unit.md)
+## 4. [标准地址](dubbo_srv_list/std_addr.md)
 
 #### 1.账目类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.acct.service.AcctItemTypeRemoteService>`
 1.1 查询所有账目类型
