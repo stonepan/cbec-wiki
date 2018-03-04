@@ -19,7 +19,7 @@
 ```java
 com.ztesoft.zsmart.bss.crm.bcdc.acct.service.AcctItemTypeRemoteService
 ```
-## 5.1 查询所有账目类型
+## 5.1 查询所有账目类型(`待改造`)
 返回所有账目类型列表
 ### 方法签名：
 ```java
@@ -46,14 +46,16 @@ List<AcctItemTypeData> qryAllAcctItemType()
 | currencyTypeId | Long | (冗)关联余额类型的货币类型标识 | O |
 | unitId | Long | (冗)关联余额类型的单位标识  | O |
 
-## 1.2 查询所有货币类型(`待改造`)
-返回所有货币类型列表
+## 1.2 根据账目类型id查询账目类型(`待改造`)
+返回符合条件的结果货币类型
 ### 方法签名：
 ```java
-List<CurrencyType> qryAllCurrencyType()
+AcctItemTypeData qryAcctItemTypeById(Long acctItemTypeId)
 ```
 #### 1.2.2 入参说明
-无
+| Name | Type | Description | Note |
+| ---- | ---- | ----------- | ---- |
+| acctItemTypeId | Long | 账目类型标识 | M |
 
 #### 1.2.3 出参说明
-参考[CurrencyType](#currencytype)
+参考[AcctItemTypeData](#acctItemTypaData)
