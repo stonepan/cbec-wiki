@@ -52,14 +52,14 @@ List<BillingCycleTypeData> queryAllBillingCycleType()
 | partyType | String | 参与人类型 | O |
 | partyCode | String | 参与人编码 | O |
 
-## 1.2 根据账期类型标识，账期日期，偏移量查询账期(`待改造`)
+## 7.2 根据账期类型标识，账期日期，偏移量查询账期(`待改造`)
 返回符合条件的账期数据
 ### 方法签名：
 ```java
 BillingCycleData qryBillingCycle(Long billingCycleTypeId, Date startDate, Integer offset)
 ```
-#### 1.2.2 入参说明
-##### 
+#### 7.2.2 入参说明
+##### <a name="7.2.2"></a>
 | Name | Type | Description | Note |
 | ---- | ---- | ----------- | ---- |
 | billingCycleTypeId | Long | 所属账期类型标识 | M |
@@ -67,5 +67,32 @@ BillingCycleData qryBillingCycle(Long billingCycleTypeId, Date startDate, Intege
 | offset | Integer | 偏移量 | M |
 根据前两个条件定位出唯一BillingCycle，按偏移量返回最终BillingCycle
 
-#### 1.2.3 出参说明
-参考[CurrencyType](#currencytype)
+#### 7.2.3 出参说明
+##### <a name="billingCycleData"></a>BillingCycleData
+| Name | Type | Description | Note |
+| ---- | ---- | ----------- | ---- |
+| billingCycleId | Long | 账期标识 | M |
+| billingCycleTypeId | Long | 账期类型标识 | M |
+| cycleBeginDate | Date | 账期起始日期 | M |
+| cycleEndDate | Date | 账期结束日期 | M |
+| state | String | 状态(A:未出帐,B:出帐中,C:出帐完成) | M |
+| debtDate | Date | 欠费日期 | M |
+| runDate | Date | 账务处理开始日期 | M |
+| seq | Long | 顺序 | M |
+| spId | Long | 第三方运营商标识 | O |
+| partyType | String | 参与人类型 | O |
+| partyCode | String | 参与人编码 | O |
+
+## 7.3 根据账期类型标识，账期日期，偏移量查询账期(给ZTP测试用)(`待改造`)
+返回符合条件的账期数据
+### 方法签名：
+```java
+BillingCycleData qryBillingCycle4Ztp(Parm4QryBillCyc parm4QryBillCyc)
+```
+#### 7.3.2 入参说明
+##### Parm4QryBillCyc 
+见[7.2.2](#7.2.2)
+
+#### 7.3.3 出参说明
+##### <a name="billingCycleData"></a>BillingCycleData
+见[BillingCycleData](#billingCycleData)
