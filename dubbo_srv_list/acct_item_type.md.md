@@ -29,7 +29,7 @@ List<AcctItemTypeData> qryAllAcctItemType()
 无
 
 #### 5.1.3 出参说明
-##### AcctItemTypeData
+##### <span id='acctItemTypaData'>AcctItemTypeData</span>
 | Name | Type | Description | Note |
 | ---- | ---- | ----------- | ---- |
 | acctItemTypeId | Long | 账目类型标识 | M |
@@ -41,7 +41,7 @@ List<AcctItemTypeData> qryAllAcctItemType()
 | usageType | String | 费用类型(A:税,B:优惠金额) | O |
 | comments | String | 备注 | O |
 | spId | Long | 第三方运营商标识 | O |
-| gstType | String | 税类型 | O |
+| gstType | String | 增值税类型 | O |
 | isCurrency | String | (冗)关联余额类型是否为货币 | O |
 | currencyTypeId | Long | (冗)关联余额类型的货币类型标识 | O |
 | unitId | Long | (冗)关联余额类型的单位标识  | O |
