@@ -35,77 +35,16 @@ List<AcctItemTypeData> qryAllAcctItemType()
 | acctItemTypeId | Long | 账目类型标识 | M |
 | acctItemTypeCode | String | 账目类型编码 | M |
 | acctItemTypeName | String | 账目类型名称 | M |
-| parentId | Long | 父级账目类型标识 | O |
 | acctResId | Long | 关联余额类型 | M |
-| savePrecision | Long | 保存精度 | M |
-| displayScale | Long | 显示精度 | O |
-| rateDisplayScale | Long | 费率配置显示精度 | O |
-| roundMethod | String | 四舍五入方式，参考ROUND_METHOD域数据定义 | O |
-
-
-
-    /**
-     *
-     * 表字段 : acct_item_type.GST_TYPE
-     */
-    private String gstType;
-
-    /**
-     *
-     * 表字段 : acct_item_type.ACCT_RES_ID
-     */
-    private Long acctResId;
-
-    /**
-     *
-     * 表字段 : acct_item_type.PARENT_ID
-     */
-    private Long parentId;
-
-    /**
-     *
-     * 表字段 : acct_item_type.EXCHANGE_ITEM_TYPE_ID
-     */
-    private Long exchangeItemTypeId;
-
-
-
-    /**
-     *
-     * 表字段 : acct_item_type.COMMENTS
-     */
-    private String comments;
-
-    /**
-     *
-     * 表字段 : acct_item_type.ACCT_ITEM_TYPE_CODE
-     */
-    private String acctItemTypeCode;
-
-    /**
-     * A 表示税  ， B 表示 优惠金额
-     * 表字段 : acct_item_type.USAGE_TYPE
-     */
-    private String usageType;
-
-    /**
-     *
-     * 表字段 : acct_item_type.SP_ID
-     */
-    private Long spId;
-
-    /**
-     * acct_res.IS_CURRENCY
-     */
-    private String isCurrency;
-
-    /**
-     * acct_res.CURRENCY_TYPE_ID
-     */
-    private Long currencyTypeId;
-
-
-
+| parentId | Long | 父级账目类型标识 | O |
+| exchangeItemTypeId | Long | 兑换账目类型标识 | O |
+| usageType | String | 费用类型(A:税,B:优惠金额) | O |
+| comments | String | 备注 | O |
+| spId | Long | 第三方运营商标识 | O |
+| gstType | String | 税类型 | O |
+| isCurrency | String | (冗)关联余额类型是否为货币 | O |
+| currencyTypeId | Long | (冗)关联余额类型的货币类型标识 | O |
+| unitId | Long | (冗)关联余额类型的单位标识  | O |
 
 ## 1.2 查询所有货币类型(`待改造`)
 返回所有货币类型列表
