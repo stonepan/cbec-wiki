@@ -1,19 +1,3 @@
-#### 1.账目类型查询服务`<com.ztesoft.zsmart.bss.crm.bcdc.acct.service.AcctItemTypeRemoteService>`
-1.1 查询所有账目类型
->
-`List<AcctItemTypeData> qryAllAcctItemType()`
-  
-1.2 根据账目类型id查询账目类型
->
-`AcctItemTypeData qryAcctItemTypeById(Long acctItemTypeId)`
-
-1.3 根据余额类型ID查询账目类型
->
-`List<AcctItemTypeData> qryAcctItemTypeByAcctResId(Long acctResId)`
-
-
-
-
 # 5. 账目类型查询服务
 服务类：
 ```java
@@ -46,16 +30,30 @@ List<AcctItemTypeData> qryAllAcctItemType()
 | currencyTypeId | Long | (冗)关联余额类型的货币类型标识 | O |
 | unitId | Long | (冗)关联余额类型的单位标识  | O |
 
-## 1.2 根据账目类型id查询账目类型(`待改造`)
+## 5.2 根据账目类型id查询账目类型(`待改造`)
 返回符合条件的结果货币类型
 ### 方法签名：
 ```java
 AcctItemTypeData qryAcctItemTypeById(Long acctItemTypeId)
 ```
-#### 1.2.2 入参说明
+#### 5.2.2 入参说明
 | Name | Type | Description | Note |
 | ---- | ---- | ----------- | ---- |
 | acctItemTypeId | Long | 账目类型标识 | M |
 
-#### 1.2.3 出参说明
+#### 5.2.3 出参说明
+参考[AcctItemTypeData](#acctItemTypaData)
+
+## 5.3 根据余额类型ID查询账目类型(`待改造`)
+返回符合条件的结果账目类型列表
+### 方法签名：
+```java
+List<AcctItemTypeData> qryAcctItemTypeByAcctResId(Long acctResId)
+```
+#### 5.3.2 入参说明
+| Name | Type | Description | Note |
+| ---- | ---- | ----------- | ---- |
+| acctResId | Long | 余额类型标识 | M |
+
+#### 5.3.3 出参说明
 参考[AcctItemTypeData](#acctItemTypaData)
