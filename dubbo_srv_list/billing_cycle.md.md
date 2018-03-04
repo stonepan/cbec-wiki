@@ -52,14 +52,20 @@ List<BillingCycleTypeData> queryAllBillingCycleType()
 | partyType | String | 参与人类型 | O |
 | partyCode | String | 参与人编码 | O |
 
-## 1.2 查询所有货币类型(`待改造`)
-返回所有货币类型列表
+## 1.2 根据账期类型标识，账期日期，偏移量查询账期(`待改造`)
+返回符合条件的账期数据
 ### 方法签名：
 ```java
-List<CurrencyType> qryAllCurrencyType()
+BillingCycleData qryBillingCycle(Long billingCycleTypeId, Date startDate, Integer offset)
 ```
 #### 1.2.2 入参说明
-无
+##### 
+| Name | Type | Description | Note |
+| ---- | ---- | ----------- | ---- |
+| billingCycleTypeId | Long | 所属账期类型标识 | M |
+| startDate | Date | 账期日期 | M |
+| offset | Integer | 偏移量 | M |
+根据前两个条件定位出唯一BillingCycle，按偏移量返回最终BillingCycle
 
 #### 1.2.3 出参说明
 参考[CurrencyType](#currencytype)
