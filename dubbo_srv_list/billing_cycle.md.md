@@ -1,23 +1,3 @@
-4.账期查询服务<com.ztesoft.zsmart.bss.crm.bcdc.common.service.BillingCycleRemoteService>
-
-
-4.1 查询所有账期类型
-
-
-List<BillingCycleTypeData> queryAllBillingCycleType()
-
-
-4.2 根据账期类型id，账期日期，偏移量查询账期
-
-
-BillingCycleData qryBillingCycle(Long billingCycleTypeId, Date startDate, Integer offset)
-
-
-7.3 根据账期类型id，账期日期，偏移量查询账期（给ZTP测试用）
-
-
-BillingCycleData qryBillingCycle4Ztp(Parm4QryBillCyc parm4QryBillCyc)
-
 # 7. 账期查询服务
 服务类：
 ```java
