@@ -15,16 +15,14 @@ List<DomainData> queryPublicDimList(String domainTypeCode)
 | ---- | ---- | ----------- | ---- |
 | domainTypeCode | String | 域类型编码 | M |
 
-
 #### 6.1.3 出参说明
 ##### DomainData
 | Name | Type | Description | Note |
 | ---- | ---- | ----------- | ---- |
-| currencyTypeId | Long | 货币类型标识 | M |
-| currencyCode | String | 货币编码 | O |
-| currencyName | String | 货币名称 | M |
-| currencySymbol | String | 货币符号 | M |
-| savePrecision | Long | 保存精度 | M |
-| displayScale | Long | 显示精度 | O |
-| rateDisplayScale | Long | 费率配置显示精度 | O |
-| roundMethod | String | 四舍五入方式，参考ROUND_METHOD域数据定义 | O |
+| domainDataId | Long | 域数据标识 | M |
+| domainTypeCode | String | 域数据编码 | M |
+| codeValue | String | 编码取值 | M |
+| lookupName | String | 显示名称 | M |
+| state | String | 状态 | M |
+| createdDate| Date | 创建时间 | O |
+| comments | String | 备注 | O |
