@@ -29,7 +29,7 @@ List<AcctItemTypeData> qryAllAcctItemType()
 无
 
 #### 5.1.3 出参说明
-##### <span id='acctItemTypaData'>AcctItemTypeData</span>
+##### <a name='acctItemTypaData'></a>AcctItemTypeData
 | Name | Type | Description | Note |
 | ---- | ---- | ----------- | ---- |
 | acctItemTypeId | Long | 账目类型标识 | M |
